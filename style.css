@@ -1,0 +1,156 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.container {
+   
+    max-width: 1200px;
+    margin: auto;
+}
+
+.title {
+    margin-top: 10px;
+    margin-bottom: 3px;
+    font-family: 'Arvo', serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+.form-wrapper {
+    border: 1px solid slategray;
+    border-radius: 4px;
+    width: 400px;
+    margin: 30px auto;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.todo-text {
+    font-size: 17px;
+    text-align: center;
+}
+
+.form-group input {
+    display: block;
+    width: 100%;
+    padding: 15px 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid slateblue;
+    font-size: 17px;
+}
+.edit-input{
+    font-size: 17px;
+}
+
+.btn,
+.btn-delete,
+.btn-edit,
+.btn-save {
+    font-size: 15px;
+    margin-right:3px;
+    border-radius: 4px;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: 200ms;
+    color: snow;
+}
+
+.btn {
+    background-color: slategray;
+}
+
+.btn:hover {
+    background-color: slateblue;
+}
+
+.btn-add {
+    margin-top: -5px;
+    width: 150px;
+    align-self: center;
+}
+
+
+.todos-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.todo-card {
+    border-radius: 4px;
+    border: 1px solid slategray;
+    padding: 20px;
+}
+
+.todo-title {
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.btn-wrapper {
+display: flex;
+justify-content: center;
+align-items:center ;
+} 
+
+.btn-delete, 
+.btn-edit {
+    width: 100px;
+margin-top:15px;
+}
+
+.btn-delete {
+    background-color: crimson;
+}
+
+.btn-delete:hover {
+    background-color: tomato;
+}
+
+.btn-edit {
+    background-color: steelblue;   
+}
+
+.btn-edit:hover {
+    background-color: rgb(79, 145, 199);
+}
+
+.btn-save {
+    width: 100px;
+    align-self: center;
+    background-color: #5a0394;
+}
+
+.btn-save:hover {
+    background-color: #9602f8;
+}
+
+.todo-edit-wrapper {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.todo-card input {
+    width: 100%;
+    padding: 15px 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid slateblue;
+}
+
+.hidden {
+    display: none;
+}
